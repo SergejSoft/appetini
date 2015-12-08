@@ -31,7 +31,7 @@ $(document).ready(function() {
     var modal = $(this),
       button = $(event.relatedTarget),
       itemsCount = $('#orderItemsCountSelect').val();
-    modal.find('.count-select#id').val(itemsCount);
+    modal.find('.count-select').val(itemsCount).trigger('change');
     modal.find('#dishId').val(button.data('id'));
   });
 
