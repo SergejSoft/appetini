@@ -51,24 +51,29 @@
             </div>
             <div class="col-lg-3 col-sm-4 col-md-3">
               <div class="card order-box">
-                <select id="orderItemsCountSelect" name="orderItemsCount" class="form-control count-select">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select><a href="#" data-toggle="modal" data-id="1" data-target="#orderModal" class="btn btn-default f-btn pull-right">Заказать</a>
+                <div class="price"><span class="price-number">43</span><span class="price-currency">грн / обед</span></div>
+                <div class="select-box-wrapper pull-left">
+                  <select id="orderItemsCountSelect" name="orderItemsCount" class="form-control count-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div><a href="#" data-toggle="modal" data-id="1" data-target="#orderModal" class="btn btn-default f-btn order-btn1">Заказать</a>
+                <div class="time"><span class="time-label">** Доставка в</span><span class="time-value"> 12:00</span></div>
               </div>
-              <div class="card m-t-30"><img src="assets/images/avatar.jpg" class="img-responsive">
+              <div class="card m-t-30 cook-box">
+                <div class="cook-label">Для вас готовит</div><img src="assets/images/avatar.jpg" class="img-responsive">
                 <div class="text-center">
-                  <h3 class="f-red m-t-0">Наталья<strong> Сальник</strong></h3>
+                  <h3 class="m-t-15">Наталья<strong> Сальник</strong></h3>
                   <div class="cook-rating m-b-10"><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span></div>
-                  <div class="city f-red m-b-10">Город:<strong> Сумы</strong></div>
+                  <div class="city m-b-10">Город:<strong> Сумы</strong></div>
                 </div>
               </div>
             </div>
@@ -82,7 +87,7 @@
           <form id="orderForm" action="order.php" name="orderForm" method="POST">
             <div class="modal-header">
               <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-              <h3 class="modal-title f-red text-center">Сделать заказ<span> на</span><span id="orderItemsCount"></span></h3>
+              <h3 class="modal-title f-red text-center">Сделать заказ</h3>
             </div>
             <div class="modal-body">
               <input id="dishId" type="hidden" required name="dishId">
@@ -91,7 +96,7 @@
               <input type="text" required name="customerPhone" minlength="9" placeholder="Ваш мобильный номер" class="form-control m-b-10">
               <input type="text" required name="customerAdress" placeholder="Ваш адрес" class="form-control m-b-10">
               <div class="text-right"><span class="f-18">Количество:
-                  <select name="orderItemsCount" class="form-control count-select">
+                  <select id="id" name="orderItemsCount" class="form-control count-select">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

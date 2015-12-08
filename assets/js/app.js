@@ -20,7 +20,6 @@ $(document).ready(function() {
   }
 
   var flexslider = $('#dish-slider');
-
   if (flexslider) {
     flexslider.flexslider({
       animation: "slide",
@@ -32,22 +31,15 @@ $(document).ready(function() {
     var modal = $(this),
       button = $(event.relatedTarget),
       itemsCount = $('#orderItemsCountSelect').val();
-    if (itemsCount == 1) {
-      modal.find('#orderItemsCount').text(' ' + itemsCount + ' обед');
-    } else if (itemsCount < 5 && itemsCount > 1){
-      modal.find('#orderItemsCount').text(' ' + itemsCount + ' обеда');
-    } else {
-      modal.find('#orderItemsCount').text(' ' + itemsCount + ' обедов');
-    }
-    modal.find('.count-select').val(itemsCount);
+    modal.find('.count-select#id').val(itemsCount);
     modal.find('#dishId').val(button.data('id'));
   });
 
   $('#orderForm').on('submit', function(e) {
     e.preventDefault();
-    $('#orderModal').modal('hide');
     $.post('order.php', $('#orderForm').serialize())
       .done(function(response) {
+        $('#orderModal').modal('hide');
         new PNotify({
           title: 'Ваш заказ отправлен',
           text: 'Ожидайте звонка',
@@ -55,5 +47,11 @@ $(document).ready(function() {
           styling: 'fontawesome'
         });
       });
-  })
+  });
+
+  $('.count-select').select2({
+    minimumResultsForSearch: Infinity
+  });
+
+  $(window).stellar({horizontalScrolling: false});
 });

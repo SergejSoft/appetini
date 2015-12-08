@@ -468,12 +468,10 @@ h1 {
     border: 1px solid #2f3238; }
 
 .f-header {
-  min-height: 600px;
-  height: 100%;
+  height: 100vh;
   background: url('../images/bg1.jpg') fixed no-repeat;
   background-size: cover; }
   .f-header .header-wrapper {
-    min-height: 600px;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -483,6 +481,14 @@ h1 {
       vertical-align: middle;
       text-align: center;
       color: #fff; }
+      .f-header .header-wrapper .header-title .city {
+        font-family: 'RalewayBold', sans-serif; }
+      .f-header .header-wrapper .header-title .flag {
+        width: 80px;
+        margin: 0 auto;
+        height: 14px;
+        background: #FFD100;
+        border-top: 7px solid #0082D1; }
 
 .f-navbar {
   border-radius: 0;
@@ -669,9 +675,32 @@ h1 {
       color: #fff;
       padding: 6px 15px; }
 
+.order-btn1 {
+  display: block;
+  margin-left: 60px; }
+
 .count-select {
-  width: 70px;
-  display: inline-block; }
+  width: 50px;
+  float: left; }
+
+.order-box .price {
+  margin: 0 0 15px 0; }
+  .order-box .price .price-number {
+    font-weight: bold;
+    font-family: RalewayBold, sans-serif;
+    font-size: 40px;
+    line-height: 100%; }
+  .order-box .price .price-currency {
+    font-size: 20px; }
+.order-box .time {
+  font-size: 14px;
+  margin: 10px 0 3px; }
+  .order-box .time .time-value {
+    font-weight: bold;
+    font-family: RalewayBold, sans-serif; }
+
+.cook-box .cook-label {
+  margin: 4px 0; }
 
 @media all and (max-width: 767px) {
   .navbar-brand {
@@ -682,3 +711,109 @@ h1 {
       white-space: pre-wrap; }
     #food-menu .dish .ingredients span {
       font-size: 12px; } }
+
+.select2-container .select2-choice {
+  border: 2px solid #dce4ec;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-indent: 1px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.select2-container.select2-drop-above .select2-choice {
+  border-bottom-color: #dce4ec;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px; }
+
+.select2-drop {
+  margin-top: -2px;
+  border: 2px solid #dce4ec;
+  border-top: 0;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.select2-drop.select2-drop-above {
+  margin-top: 2px;
+  border-top: 2px solid #dce4ec;
+  border-bottom: 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.select2-container .select2-choice div {
+  border-left: 2px solid #dce4ec;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+
+.select2-search input {
+  height: 30px !important;
+  border: 2px solid #dce4ec; }
+
+.select2-container-active .select2-choice, .select2-container-active .select2-choices {
+  border: 2px solid #dce4ec;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.select2-dropdown-open .select2-choice {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0; }
+
+.select2-dropdown-open .select2-choice div {
+  background: transparent;
+  border-left: none;
+  filter: none; }
+
+.select2-results .select2-highlighted {
+  background: #3875d7;
+  background: #1abc9c;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.select2-container-multi .select2-choices {
+  height: auto !important;
+  height: 1%;
+  border: 2px solid #dce4ec; }
+
+.select2-container-multi.select2-container-active .select2-choices {
+  border: 2px solid #dce4ec;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.select2-container--default .select2-selection--single {
+  height: 40px;
+  padding: 4px 0 4px 6px;
+  border-radius: 0; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 6px; }
