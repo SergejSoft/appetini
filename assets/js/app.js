@@ -32,7 +32,9 @@ $(document).ready(function() {
       button = $(event.relatedTarget),
       itemsCount = $('#orderItemsCountSelect').val();
     modal.find('.count-select').val(itemsCount).trigger('change');
+    modal.find('#priceText').text(button.data('price') * itemsCount);
     modal.find('#dishId').val(button.data('id'));
+    modal.find('#price').val(button.data('price'));
   });
 
   $('#orderForm').on('submit', function(e) {
@@ -47,6 +49,11 @@ $(document).ready(function() {
           styling: 'fontawesome'
         });
       });
+  });
+
+  $('#orderModal .count-select').on('change', function() {
+    $('#orderModal').find('#priceText').text($('#orderModalBtn').data('price') * $(this).val());
+    $('#orderModal').find('#price')
   });
 
   $('.count-select').select2({
