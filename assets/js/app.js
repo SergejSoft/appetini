@@ -39,6 +39,12 @@ $(document).ready(function() {
 
   $('#orderForm').on('submit', function(e) {
     e.preventDefault();
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Order modal',
+      eventAction: 'click',
+      eventLabel: $('#dishId').val()
+    });
     $.post('order.php', $('#orderForm').serialize())
       .done(function(response) {
         $('#orderModal').modal('hide');
@@ -54,6 +60,15 @@ $(document).ready(function() {
   $('#orderModal .count-select').on('change', function() {
     $('#orderModal').find('#priceText').text($('#orderModalBtn').data('price') * $(this).val());
     $('#orderModal').find('#price').val($('#orderModalBtn').data('price') * $(this).val());
+  });
+
+  $('#orderModalBtn').on('click', function() {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Order start',
+      eventAction: 'click',
+      eventLabel: $(this).data('id')
+    });
   });
 
   $('.count-select').select2({
