@@ -1,0 +1,684 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+.lobster {
+  font-family: 'Lobster', cursive; }
+
+.f-grey {
+  color: #f5f5f5; }
+
+.f-white {
+  color: #fff; }
+
+.f-black {
+  color: #2f3238; }
+
+.f-red {
+  color: #c94e50; }
+
+.font-extra-bold {
+  font-family: 'RalewayExtraBold', sans-serif; }
+
+.font-bold {
+  font-weight: bold;
+  font-family: 'RalewayBold', sans-serif; }
+
+.m-t-0 {
+  margin-top: 0px !important; }
+
+.m-b-0 {
+  margin-bottom: 0px !important; }
+
+.m-l-0 {
+  margin-left: 0px !important; }
+
+.m-r-0 {
+  margin-right: 0px !important; }
+
+.m-t-5 {
+  margin-top: 5px !important; }
+
+.m-b-5 {
+  margin-bottom: 5px !important; }
+
+.m-l-5 {
+  margin-left: 5px !important; }
+
+.m-r-5 {
+  margin-right: 5px !important; }
+
+.m-t-10 {
+  margin-top: 10px !important; }
+
+.m-b-10 {
+  margin-bottom: 10px !important; }
+
+.m-l-10 {
+  margin-left: 10px !important; }
+
+.m-r-10 {
+  margin-right: 10px !important; }
+
+.m-t-15 {
+  margin-top: 15px !important; }
+
+.m-b-15 {
+  margin-bottom: 15px !important; }
+
+.m-l-15 {
+  margin-left: 15px !important; }
+
+.m-r-15 {
+  margin-right: 15px !important; }
+
+.m-t-20 {
+  margin-top: 20px !important; }
+
+.m-b-20 {
+  margin-bottom: 20px !important; }
+
+.m-l-20 {
+  margin-left: 20px !important; }
+
+.m-r-20 {
+  margin-right: 20px !important; }
+
+.m-t-25 {
+  margin-top: 25px !important; }
+
+.m-b-25 {
+  margin-bottom: 25px !important; }
+
+.m-l-25 {
+  margin-left: 25px !important; }
+
+.m-r-25 {
+  margin-right: 25px !important; }
+
+.m-t-30 {
+  margin-top: 30px !important; }
+
+.m-b-30 {
+  margin-bottom: 30px !important; }
+
+.m-l-30 {
+  margin-left: 30px !important; }
+
+.m-r-30 {
+  margin-right: 30px !important; }
+
+.m-t-40 {
+  margin-top: 40px !important; }
+
+.m-b-40 {
+  margin-bottom: 40px !important; }
+
+.m-l-40 {
+  margin-left: 40px !important; }
+
+.m-r-40 {
+  margin-right: 40px !important; }
+
+.m-t-50 {
+  margin-top: 50px !important; }
+
+.m-b-50 {
+  margin-bottom: 50px !important; }
+
+.m-l-50 {
+  margin-left: 50px !important; }
+
+.m-r-50 {
+  margin-right: 50px !important; }
+
+.m-t-100 {
+  margin-top: 100px !important; }
+
+.m-b-100 {
+  margin-bottom: 100px !important; }
+
+.m-l-100 {
+  margin-left: 100px !important; }
+
+.m-r-100 {
+  margin-right: 100px !important; }
+
+.m-t--10 {
+  margin-top: -10px !important; }
+
+.m-b--10 {
+  margin-bottom: -10px !important; }
+
+.m-l--10 {
+  margin-left: -10px !important; }
+
+.m-r--10 {
+  margin-right: -10px !important; }
+
+.p-t-0 {
+  padding-top: 0px !important; }
+
+.p-b-0 {
+  padding-bottom: 0px !important; }
+
+.p-l-0 {
+  padding-left: 0px !important; }
+
+.p-r-0 {
+  padding-right: 0px !important; }
+
+.p-t-5 {
+  padding-top: 5px !important; }
+
+.p-b-5 {
+  padding-bottom: 5px !important; }
+
+.p-l-5 {
+  padding-left: 5px !important; }
+
+.p-r-5 {
+  padding-right: 5px !important; }
+
+.p-t-10 {
+  padding-top: 10px !important; }
+
+.p-b-10 {
+  padding-bottom: 10px !important; }
+
+.p-l-10 {
+  padding-left: 10px !important; }
+
+.p-r-10 {
+  padding-right: 10px !important; }
+
+.p-t-15 {
+  padding-top: 15px !important; }
+
+.p-b-15 {
+  padding-bottom: 15px !important; }
+
+.p-l-15 {
+  padding-left: 15px !important; }
+
+.p-r-15 {
+  padding-right: 15px !important; }
+
+.p-t-20 {
+  padding-top: 20px !important; }
+
+.p-b-20 {
+  padding-bottom: 20px !important; }
+
+.p-l-20 {
+  padding-left: 20px !important; }
+
+.p-r-20 {
+  padding-right: 20px !important; }
+
+.p-t-25 {
+  padding-top: 25px !important; }
+
+.p-b-25 {
+  padding-bottom: 25px !important; }
+
+.p-l-25 {
+  padding-left: 25px !important; }
+
+.p-r-25 {
+  padding-right: 25px !important; }
+
+.p-t-30 {
+  padding-top: 30px !important; }
+
+.p-b-30 {
+  padding-bottom: 30px !important; }
+
+.p-l-30 {
+  padding-left: 30px !important; }
+
+.p-r-30 {
+  padding-right: 30px !important; }
+
+.p-t-40 {
+  padding-top: 40px !important; }
+
+.p-b-40 {
+  padding-bottom: 40px !important; }
+
+.p-l-40 {
+  padding-left: 40px !important; }
+
+.p-r-40 {
+  padding-right: 40px !important; }
+
+.p-t-50 {
+  padding-top: 50px !important; }
+
+.p-b-50 {
+  padding-bottom: 50px !important; }
+
+.p-l-50 {
+  padding-left: 50px !important; }
+
+.p-r-50 {
+  padding-right: 50px !important; }
+
+.p-t-100 {
+  padding-top: 100px !important; }
+
+.p-b-100 {
+  padding-bottom: 100px !important; }
+
+.p-l-100 {
+  padding-left: 100px !important; }
+
+.p-r-100 {
+  padding-right: 100px !important; }
+
+.p-t--5 {
+  padding-top: -5px !important; }
+
+.p-b--5 {
+  padding-bottom: -5px !important; }
+
+.p-l--5 {
+  padding-left: -5px !important; }
+
+.p-r--5 {
+  padding-right: -5px !important; }
+
+.p-t--10 {
+  padding-top: -10px !important; }
+
+.p-b--10 {
+  padding-bottom: -10px !important; }
+
+.p-l--10 {
+  padding-left: -10px !important; }
+
+.p-r--10 {
+  padding-right: -10px !important; }
+
+.p-t--15 {
+  padding-top: -15px !important; }
+
+.p-b--15 {
+  padding-bottom: -15px !important; }
+
+.p-l--15 {
+  padding-left: -15px !important; }
+
+.p-r--15 {
+  padding-right: -15px !important; }
+
+.p-t--20 {
+  padding-top: -20px !important; }
+
+.p-b--20 {
+  padding-bottom: -20px !important; }
+
+.p-l--20 {
+  padding-left: -20px !important; }
+
+.p-r--20 {
+  padding-right: -20px !important; }
+
+.p-t--25 {
+  padding-top: -25px !important; }
+
+.p-b--25 {
+  padding-bottom: -25px !important; }
+
+.p-l--25 {
+  padding-left: -25px !important; }
+
+.p-r--25 {
+  padding-right: -25px !important; }
+
+.p-t--30 {
+  padding-top: -30px !important; }
+
+.p-b--30 {
+  padding-bottom: -30px !important; }
+
+.p-l--30 {
+  padding-left: -30px !important; }
+
+.p-r--30 {
+  padding-right: -30px !important; }
+
+.p-t--40 {
+  padding-top: -40px !important; }
+
+.p-b--40 {
+  padding-bottom: -40px !important; }
+
+.p-l--40 {
+  padding-left: -40px !important; }
+
+.p-r--40 {
+  padding-right: -40px !important; }
+
+.p-t--50 {
+  padding-top: -50px !important; }
+
+.p-b--50 {
+  padding-bottom: -50px !important; }
+
+.p-l--50 {
+  padding-left: -50px !important; }
+
+.p-r--50 {
+  padding-right: -50px !important; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.f-14 {
+  font-size: 14px; }
+
+.f-16 {
+  font-size: 16px; }
+
+.f-18 {
+  font-size: 18px; }
+
+.f-24 {
+  font-size: 24px; }
+
+.f-36 {
+  font-size: 36px; }
+
+.f-48 {
+  font-size: 48px; }
+
+.f-56 {
+  font-size: 56px; }
+
+.f-64 {
+  font-size: 64px; }
+
+.app.dish-page {
+  padding-top: 90px; }
+
+@font-face {
+  src: url('../fonts/RalewayExtraBold.ttf');
+  font-family: 'RalewayExtraBold'; }
+
+@font-face {
+  src: url('../fonts/RalewayBold.ttf');
+  font-family: 'RalewayBold'; }
+
+@font-face {
+  src: url('../fonts/RalewayRegular.ttf');
+  font-family: 'RalewayRegular'; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: #f5f5f5;
+  font-family: 'RalewayRegular', sans-serif; }
+
+.f-section {
+  width: 100%;
+  background: #2f3238; }
+  .f-section.grey {
+    background: #f5f5f5; }
+
+.f-article {
+  text-indent: 24px;
+  text-align: justify; }
+
+.clearfix {
+  clear: both; }
+
+.f-btn {
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 8px 15px;
+  color: #fff;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease; }
+  .f-btn.btn-default {
+    background: #c94e50;
+    border: 1px solid #c94e50; }
+    .f-btn.btn-default:hover, .f-btn.btn-default:focus {
+      color: #c94e50;
+      border: 1px solid #c94e50;
+      background: #fff; }
+
+h1 {
+  font-size: 42px;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.form-control {
+  border: 1px solid #2f3238;
+  border-radius: 0;
+  color: #2f3238;
+  height: 40px; }
+  .form-control:focus {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #2f3238; }
+
+.f-header {
+  min-height: 600px;
+  height: 100%;
+  background: url('../images/bg1.jpg') fixed no-repeat;
+  background-size: cover; }
+  .f-header .header-wrapper {
+    min-height: 600px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: table; }
+    .f-header .header-wrapper .header-title {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color: #fff; }
+
+.f-navbar {
+  border-radius: 0;
+  border: none;
+  transition: background 0.3s ease-in-out; }
+  .f-navbar.onscroll {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5); }
+    .f-navbar.onscroll .navbar-brand {
+      color: #c94e50; }
+    .f-navbar.onscroll .navbar-toggle {
+      color: #c94e50; }
+    .f-navbar.onscroll .f-menu li a {
+      color: #c94e50; }
+      .f-navbar.onscroll .f-menu li a:after {
+        background: #c94e50; }
+  .f-navbar .navbar-brand {
+    color: #fff;
+    font-size: 24px; }
+  .f-navbar .navbar-toggle {
+    font-size: 18px;
+    margin: 0;
+    padding: 28px;
+    border: none;
+    color: #fff; }
+  .f-navbar .f-menu li a {
+    color: #fff;
+    position: relative;
+    /*padding: 30px;*/ }
+    .f-navbar .f-menu li a:after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      height: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      transition: height 0.3s ease; }
+    .f-navbar .f-menu li a:hover, .f-navbar .f-menu li a:focus {
+      background: none; }
+      .f-navbar .f-menu li a:hover:after, .f-navbar .f-menu li a:hover:before, .f-navbar .f-menu li a:focus:after, .f-navbar .f-menu li a:focus:before {
+        height: 4px; }
+
+.f-modal .modal-content {
+  border-radius: 0; }
+  .f-modal .modal-content .modal-header, .f-modal .modal-content .modal-body, .f-modal .modal-content .modal-footer {
+    background: #fff;
+    border: none;
+    color: #c94e50; }
+  .f-modal .modal-content .modal-body {
+    padding: 15px 45px; }
+  .f-modal .modal-content .modal-title {
+    font-weight: bold; }
+  .f-modal .modal-content .close {
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    margin-top: 0;
+    opacity: 1;
+    text-shadow: none;
+    color: #fff;
+    font-size: 36px; }
+    .f-modal .modal-content .close:hover {
+      opacity: 0.8; }
+
+#food-menu .dish {
+  position: relative;
+  width: 40%;
+  display: inline-block;
+  margin: 10px 20px;
+  height: 300px;
+  background: #2f3238;
+  overflow: hidden; }
+  #food-menu .dish:hover img {
+    transform: scale3d(1.1, 1.1, 1);
+    opacity: 0.4; }
+  #food-menu .dish:hover .dish-info .ingredients span {
+    transform: translate3d(0, 0, 0); }
+  #food-menu .dish:hover .price {
+    opacity: 1; }
+  #food-menu .dish:hover .time {
+    transform: translate3d(0, 0, 0); }
+  #food-menu .dish img {
+    opacity: 1;
+    height: 300px;
+    min-width: 100%;
+    transition: transform 1s ease, opacity 0.3s ease; }
+  #food-menu .dish .dish-info {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: calc(100% - 40px); }
+    #food-menu .dish .dish-info .cook-name {
+      color: #fff;
+      text-transform: uppercase; }
+      #food-menu .dish .dish-info .cook-name h2 {
+        white-space: nowrap; }
+    #food-menu .dish .dish-info .ingredients span {
+      padding: 6px 15px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'RalewayRegular', sans-serif;
+      margin-right: 4px;
+      margin-top: 4px;
+      transform: translate3d(-460px, 0, 0);
+      background: rgba(255, 255, 255, 0.7);
+      color: #2f3238;
+      display: inline-block;
+      transition: transform 0.3s ease;
+      transition-delay: 0.4s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(2) {
+        transition-delay: 0.3s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(3) {
+        transition-delay: 0.25s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(4) {
+        transition-delay: 0.2s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(5) {
+        transition-delay: 0.15s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(6) {
+        transition-delay: 0.1s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(7) {
+        transition-delay: 0.05s; }
+      #food-menu .dish .dish-info .ingredients span:nth-of-type(8) {
+        transition-delay: 0s; }
+  #food-menu .dish .time {
+    position: absolute;
+    left: 20px;
+    transition: transform 0.3s ease;
+    transform: translate3d(-360px, 0, 0);
+    bottom: 20px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.7); }
+  #food-menu .dish .price {
+    position: absolute;
+    right: 20px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    bottom: 20px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.7); }
+    #food-menu .dish .price .price-count {
+      padding: 10px; }
+    #food-menu .dish .price .more {
+      padding: 0 2px;
+      text-align: right;
+      font-size: 12px;
+      line-height: 1;
+      color: #2f3238;
+      background: rgba(255, 255, 255, 0.7);
+      display: none; }
+      #food-menu .dish .price .more .fa {
+        vertical-align: middle; }
+
+.card {
+  padding: 10px 15px;
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  width: 100%; }
+
+.flex-direction-nav a {
+  color: #2f3238;
+  height: 50px; }
+  .flex-direction-nav a:before {
+    font-family: 'fontAwesome';
+    opacity: 1;
+    text-shadow: none; }
+  .flex-direction-nav a.flex-prev:before {
+    content: '\f053';
+    color: #fff; }
+  .flex-direction-nav a.flex-next:before {
+    content: '\f054';
+    color: #fff; }
+
+.meals {
+  list-style-type: none; }
+  .meals li {
+    margin: 10px 0; }
+    .meals li .meal-item {
+      font-weight: 500;
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      padding: 6px 15px; }
+
+.count-select {
+  width: 70px;
+  display: inline-block; }
+
+@media all and (max-width: 767px) {
+  .navbar-brand {
+    padding: 30px; }
+  #food-menu .dish {
+    width: 80%; }
+    #food-menu .dish .dish-info .cook-name h2 {
+      white-space: pre-wrap; }
+    #food-menu .dish .ingredients span {
+      font-size: 12px; } }

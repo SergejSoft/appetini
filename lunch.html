@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Home food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/assets.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script type="application/javascript" src="assets/js/assets.js"></script>
+    <script type="application/javascript" src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="app lunch-page p-t-50">
+      <nav class="navbar f-navbar navbar-fixed-top onscroll">
+        <div class="container">
+          <div class="navbar-header">
+            <div data-toggle="collapse" data-target="#f-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="glyphicon glyphicon-menu-hamburger"></span></div><a href="index.html" class="navbar-brand lobster">Appetini</a>
+          </div>
+          <div id="f-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right f-menu">
+              <li><a href="index.html#food-menu">Меню</a></li>
+              <li><a href="index.html#f-about">О нас</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container m-b-100">
+        <div class="m-t-50">
+          <div class="row">
+            <div class="col-lg-9 col-sm-8 col-md-9">
+              <div class="card">
+                <div id="dish-slider" class="flexslider m-b-0">
+                  <ul class="slides">
+                    <li data-thumb="assets/images/dish1/dish.jpg"><img src="assets/images/dish1/dish.jpg"></li>
+                    <li data-thumb="assets/images/dish1/soup.jpg"><img src="assets/images/dish1/soup.jpg"></li>
+                    <li data-thumb="assets/images/dish1/cake.jpg"><img src="assets/images/dish1/cake.jpg"></li>
+                    <li data-thumb="assets/images/dish1/dish2.jpg"><img src="assets/images/dish1/dish2.jpg"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card m-t-30 m-b-30">
+                <div class="text-center f-red f-18">В обед входит:</div>
+                <ul class="meals m-t-10">
+                  <li><span class="meal-item">Солянка</span><strong class="pull-right">150g</strong></li>
+                  <li><span class="meal-item">Запеканка</span><strong class="pull-right">150g</strong></li>
+                  <li><span class="meal-item">Гречневая каша с подливкой</span><strong class="pull-right">150g</strong></li>
+                  <li><span class="meal-item">Молочко с медком</span><strong class="pull-right">150g</strong></li>
+                  <li><span class="meal-item">Мороженко</span><strong class="pull-right">150g</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-md-3">
+              <div class="card order-box">
+                <select id="orderItemsCountSelect" name="orderItemsCount" class="form-control count-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select><a href="#" data-toggle="modal" data-id="1" data-target="#orderModal" class="btn btn-default f-btn pull-right">Заказать</a>
+              </div>
+              <div class="card m-t-30"><img src="assets/images/avatar.jpg" class="img-responsive">
+                <div class="text-center">
+                  <h3 class="f-red m-t-0">Наталья<strong> Сальник</strong></h3>
+                  <div class="cook-rating m-b-10"><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span><span class="fa fa-star f-red m-r-5 f-18"></span></div>
+                  <div class="city f-red m-b-10">Город:<strong> Сумы</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="orderModal" tabindex="-1" role="dialog" class="modal fade f-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="orderForm" action="order.php" name="orderForm" method="POST">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+              <h3 class="modal-title f-red text-center">Сделать заказ<span> на</span><span id="orderItemsCount"></span></h3>
+            </div>
+            <div class="modal-body">
+              <input id="dishId" type="hidden" required name="dishId">
+              <input type="text" required name="customerName" placeholder="Ваше имя" class="form-control m-b-10">
+              <input type="email" required name="customerEmail" placeholder="Ваша электронная почта" class="form-control m-b-10">
+              <input type="text" required name="customerPhone" minlength="9" placeholder="Ваш мобильный номер" class="form-control m-b-10">
+              <input type="text" required name="customerAdress" placeholder="Ваш адрес" class="form-control m-b-10">
+              <div class="text-right"><span class="f-18">Количество:
+                  <select name="orderItemsCount" class="form-control count-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select></span></div>
+            </div>
+            <div class="modal-footer text-center">
+              <button id="sendForm" type="Submit" name="submitOrder" class="btn btn-default f-btn">Заказать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
