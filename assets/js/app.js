@@ -32,6 +32,13 @@ $(document).ready(function() {
     var modal = $(this),
       button = $(event.relatedTarget),
       itemsCount = $('#orderItemsCountSelect').val();
+    if (itemsCount == 1) {
+      modal.find('#orderItemsCount').text(' ' + itemsCount + ' обед');
+    } else if (itemsCount < 5 && itemsCount > 1){
+      modal.find('#orderItemsCount').text(' ' + itemsCount + ' обеда');
+    } else {
+      modal.find('#orderItemsCount').text(' ' + itemsCount + ' обедов');
+    }
     modal.find('.count-select').val(itemsCount);
     modal.find('#dishId').val(button.data('id'));
   });
