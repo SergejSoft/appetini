@@ -34,7 +34,7 @@ $(document).ready(function() {
     modal.find('.count-select').val(itemsCount).trigger('change');
     modal.find('#priceText').text(button.data('price') * itemsCount);
     modal.find('#dishId').val(button.data('id'));
-    modal.find('#price').val(button.data('price'));
+    modal.find('#price').val(button.data('price') * itemsCount);
   });
 
   $('#orderForm').on('submit', function(e) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   $('#orderModal .count-select').on('change', function() {
     $('#orderModal').find('#priceText').text($('#orderModalBtn').data('price') * $(this).val());
-    $('#orderModal').find('#price')
+    $('#orderModal').find('#price').val($('#orderModalBtn').data('price') * $(this).val());
   });
 
   $('.count-select').select2({
