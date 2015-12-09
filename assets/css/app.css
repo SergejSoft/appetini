@@ -467,6 +467,20 @@ h1 {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #2f3238; }
 
+.f-link {
+  color: inherit; }
+  .f-link:hover, .f-link:focus {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8; }
+
+.f-link {
+  color: inherit; }
+  .f-link:hover, .f-link:focus {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8; }
+
 .f-header {
   height: 100vh;
   background: url('../images/bg1.jpg') fixed no-repeat;
@@ -817,3 +831,13 @@ h1 {
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 6px; }
+
+.f-footer {
+  position: relative; }
+  .f-footer .footer-wrapper {
+    border-top: 1px solid rgba(47, 50, 56, 0.5); }
+
+.f-footer {
+  position: relative; }
+  .f-footer .footer-wrapper {
+    border-top: 1px solid rgba(47, 50, 56, 0.5); }
