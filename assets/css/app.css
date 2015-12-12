@@ -430,6 +430,8 @@ body {
   background: #2f3238; }
   .f-section.grey {
     background: #f5f5f5; }
+  .f-section.white {
+    background: #fff; }
 
 .f-article {
   text-indent: 24px;
@@ -480,6 +482,19 @@ h1 {
     text-decoration: none;
     color: inherit;
     opacity: 0.8; }
+
+.subscribe-form .subscribe-email-input {
+  width: 60%;
+  margin: 0 auto; }
+.subscribe-form .socials .f-link {
+  color: #c94e50; }
+
+.white-bg {
+  display: inline-block;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5);
+  max-width: 60%; }
 
 .f-header {
   height: 100vh;
@@ -841,10 +856,10 @@ h1 {
 
 .f-footer {
   position: relative; }
-  .f-footer .footer-wrapper {
-    border-top: 1px solid rgba(47, 50, 56, 0.5); }
+  .f-footer .footer-center {
+    padding-left: 80px; }
 
 .f-footer {
   position: relative; }
-  .f-footer .footer-wrapper {
-    border-top: 1px solid rgba(47, 50, 56, 0.5); }
+  .f-footer .footer-center {
+    padding-left: 80px; }

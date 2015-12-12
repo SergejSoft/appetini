@@ -37,20 +37,17 @@ $(document).ready(function() {
     modal.find('#price').val(button.data('price') * itemsCount);
   });
 
-  $('#orderForm').on('submit', function(e) {
+  $('#subscribeForm').on('submit', function(e) {
     e.preventDefault();
     ga('send', {
       hitType: 'event',
-      eventCategory: 'Order modal',
-      eventAction: 'click',
-      eventLabel: $('#dishId').val()
+      eventCategory: 'Subscribe',
+      eventAction: 'click'
     });
-    $.post('order.php', $('#orderForm').serialize())
+    $.post('subscribe.php', $('#subscribeForm').serialize())
       .done(function(response) {
-        $('#orderModal').modal('hide');
         new PNotify({
-          title: 'Ваш заказ отправлен',
-          text: 'Ожидайте звонка',
+          title: 'Дякуємо за підписку=)',
           type: 'success',
           styling: 'fontawesome'
         });
