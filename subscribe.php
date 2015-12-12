@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['subscribeForm'])){
+if(isset($_POST['subscribeMail'])){
     $subscribe =mail ("appetini.sumy@gmail.com", "Subscribe", "\nEmail: $_POST[subscribeMail]");
 
 }
